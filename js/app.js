@@ -57,10 +57,8 @@
 
 // Welcome message
 let userName = prompt('Please enter your name:');
-let greeting = 'Welcome to my website, ' + userName + '!';
 // console.log(userName);
-// console.log(greeting);
-alert(greeting);
+alert('Welcome to my website, ' + userName + '!');
 
 // Question 1:
 let doILikeSports = prompt('Do I like sports?').toLowerCase();
