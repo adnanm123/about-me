@@ -1,0 +1,47 @@
+/* This is where you will write your CSS */
+html {
+  background-color: beige;
+}
+
+#header1 {
+  font-size: 3rem;
+  color: lightgreen;
+} 
+
+ul {
+  list-style: disc;
+  margin: 2rem;
+}
+
+ol {
+  list-style-position: inside;
+  list-style: decimal;
+  padding: 1rem;
+  color: brown;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 20rem;
+  width: 15rem;
+}
+
+.header2 {
+  font-size: 3rem;
+  color:lightgreen;
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  margin: 2em;
+  color: brown;
+}
+
+.header3 {
+  font-size: 3rem;
+  color: lightgreen;
+  text-align: center;
+}
