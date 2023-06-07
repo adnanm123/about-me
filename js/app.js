@@ -124,3 +124,88 @@ if (doILikeMovies === 'no' || doILikeMovies === 'n') {
   // console.log('The answer has to be a yes or a no');
   alert('The answer has to be a yes or no');
 }
+
+
+// class example:
+
+// // store values (answers) in an array
+// let favMoviesAnswers = ['Star Wars', 'Enchanted', 'Quartet'];
+
+// // user is prompted for a guess
+// // let userMovieGuess = prompt('What is one of my favorite movies');
+// let userMovieGuess = 'Quartet';
+
+// // how many guesses do they get? let's store it somehow
+// let howManyAttempts = 4;
+
+// // we need a loop to give the user multiple attempts
+// while (howManyAttempts) {
+//   howManyAttempts--;
+//   console.log(`You have ${howManyAttempts} attempts remaining`);
+//   // evaluate that guess, is their guess in the array of possible answers?
+//   for (let i = 0; i < favMoviesAnswers.length; i++) {
+//     // console.log(userMovieGuess, favMoviesAnswers[i]);
+//     console.log(favMoviesAnswers[i]);
+//     // check if user has the right right answer
+//     // if they right: You got it right
+//     if (userMovieGuess === favMoviesAnswers[i]) {
+//       console.log('you are correct!');
+//     }
+//   }
+// }
+
+
+// Question 7:
+let favTVShowAnswers = ['Blacklist', 'Prison Break', 'Power', 'Money Heist', 'Game of Thrones'];
+let howManyAttempts = 6;
+let correctAnswer = false; // to start off the user has not guessed correct answer yet.
+while (howManyAttempts > 0) {
+  console.log(`You have ${howManyAttempts} attempts remaining`);
+
+  let userTVQuestion = prompt('What is one of my favorite tv shows');
+  howManyAttempts--;
+  for (let i = 0; i < favTVShowAnswers.length; i++) {
+    if (userTVQuestion === favTVShowAnswers[i]) {
+      alert('You are correct!');
+      correctAnswer = true;
+      howManyAttempts--;
+      howManyAttempts = 0; // Exit the while loop
+      break; // Exit the for loop
+    }
+    // else if(userTVQuestion !== favTVShowAnswers[i]){
+    // alert('You are incorrect. Try again.');
+    //   continue;
+  }
+  if(!correctAnswer && howManyAttempts > 0){
+    alert('You are incorrect. Try again.');
+    alert(`You have ${howManyAttempts} attempts remaining`);
+  }
+}
+// alert('You are incorrect. Try again.');
+// alert(`You have ${howManyAttempts} attempts remaining`);
+// userTVQuestion = prompt('What is one of my favorite tv shows');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   if (howManyAttempts === 0) {
+//     alert('Sorry, you have exhausted all your attempts.');
+//     alert('The possible correct answers are: ' + favTVShowAnswers.join(', '));
+//   } else if (userTVShowGuess !== favTVShowAnswers[i]) {
+//     alert('Incorrect guess! Try again.');
+//   }
+// }
