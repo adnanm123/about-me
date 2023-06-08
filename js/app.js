@@ -44,18 +44,22 @@ function userGuessVideoGames() {
 userGuessVideoGames();
 
 // Question3:
-let doILikeTraveling = prompt('Do I like to travel?').toLowerCase();
-if (doILikeTraveling === 'yes' || doILikeTraveling === 'y') {
-  // console.log('Yes, I do like to travel!');
-  alert('Yes you are correct');
-  totalCorrectAnswers++;
-} else if (doILikeTraveling === 'no' || doILikeTraveling === 'n') {
-  // console.log('That\'s wrong');
-  alert('No that is incorrect');
-} else {
-  // console.log('The answer has to be a yes or a no');
-  alert('The answer has to be a yes or no');
+
+function userGuessTravel() {
+  let doILikeTraveling = prompt('Do I like to travel?').toLowerCase();
+  if (doILikeTraveling === 'yes' || doILikeTraveling === 'y') {
+    // console.log('Yes, I do like to travel!');
+    alert('Yes you are correct');
+    totalCorrectAnswers++;
+  } else if (doILikeTraveling === 'no' || doILikeTraveling === 'n') {
+    // console.log('That\'s wrong');
+    alert('No that is incorrect');
+  } else {
+    // console.log('The answer has to be a yes or a no');
+    alert('The answer has to be a yes or no');
+  }
 }
+userGuessTravel();
 
 // Question 4:
 let doILikeCrusing = prompt('Do I like to go cruising?').toLowerCase();
