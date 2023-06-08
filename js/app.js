@@ -7,18 +7,23 @@ let userName = prompt('Please enter your name:');
 alert('Welcome to my website, ' + userName + '!');
 
 // Question 1:
-let doILikeSports = prompt('Do I like sports?').toLowerCase();
-if (doILikeSports === 'yes' || doILikeSports === 'y') {
-  // console.log('Yes, I do like sports!');
-  alert('Yes you are correct');
-  totalCorrectAnswers++;
-} else if (doILikeSports === 'no' || doILikeSports === 'n') {
-  // console.log('That\'s wrong');
-  alert('No that is incorrect');
-} else {
-  // console.log('The answer has to be a yes or a no');
-  alert('The answer has to be a yes or no');
+
+function favoriteSports() {
+
+  let doILikeSports = prompt('Do I like sports?').toLowerCase();
+  if (doILikeSports === 'yes' || doILikeSports === 'y') {
+    // console.log('Yes, I do like sports!');
+    alert('Yes you are correct');
+    totalCorrectAnswers++;
+  } else if (doILikeSports === 'no' || doILikeSports === 'n') {
+    // console.log('That\'s wrong');
+    alert('No that is incorrect');
+  } else {
+    // console.log('The answer has to be a yes or a no');
+    alert('The answer has to be a yes or no');
+  }
 }
+favoriteSports();
 
 // Question 2:
 let doILikeVideoGames = prompt('Do I like video games?').toLowerCase();
