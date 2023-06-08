@@ -98,33 +98,37 @@ function userGuessWatchingMovies() {
 userGuessWatchingMovies();
 
 // Question 6:
-let correctNumber = '7'; // The correct number to guess
-let remainingAttempts = 4; // Number of attempts the user has
 
-while (remainingAttempts > 0) {
-  console.log(`You have ${remainingAttempts} attempts remaining`);
-  let userGuessAnswer = prompt('Guess a number between 1 and 10.'); // Prompt the user to enter a numeric guess
-  remainingAttempts--;
-  if (userGuessAnswer === correctNumber) {
-    console.log('You are correct');
-    alert('Well done! You guessed the correct number.');
-    totalCorrectAnswers++;
+function userGuessFavNumber() {
+  let correctNumber = '7'; // The correct number to guess
+  let remainingAttempts = 4; // Number of attempts the user has
+
+  while (remainingAttempts > 0) {
+    console.log(`You have ${remainingAttempts} attempts remaining`);
+    let userGuessAnswer = prompt('Guess a number between 1 and 10.'); // Prompt the user to enter a numeric guess
     remainingAttempts--;
-    remainingAttempts = 0;
-    break; // Exit the loop since the user has guessed correctly
-  } else if (userGuessAnswer < correctNumber) {
-    alert('Too low! Try again.');
-    console.log('You have' + remainingAttempts + 'attempts remaining');
-    alert(`You have ${remainingAttempts} attempts remaining`);
-  } else if(userGuessAnswer > correctNumber) {
-    alert('Too high! Try again.');
-    console.log('You have' + remainingAttempts + 'attempts remaining');
-    alert(`You have ${remainingAttempts} attempts remaining`);
-  }
-  if (remainingAttempts === 0) {
-    alert(`Sorry, you have exhausted all your attempts. The correct number was ${correctNumber}.`);
+    if (userGuessAnswer === correctNumber) {
+      console.log('You are correct');
+      alert('Well done! You guessed the correct number.');
+      totalCorrectAnswers++;
+      remainingAttempts--;
+      remainingAttempts = 0;
+      break; // Exit the loop since the user has guessed correctly
+    } else if (userGuessAnswer < correctNumber) {
+      alert('Too low! Try again.');
+      console.log('You have' + remainingAttempts + 'attempts remaining');
+      alert(`You have ${remainingAttempts} attempts remaining`);
+    } else if(userGuessAnswer > correctNumber) {
+      alert('Too high! Try again.');
+      console.log('You have' + remainingAttempts + 'attempts remaining');
+      alert(`You have ${remainingAttempts} attempts remaining`);
+    }
+    if (remainingAttempts === 0) {
+      alert(`Sorry, you have exhausted all your attempts. The correct number was ${correctNumber}.`);
+    }
   }
 }
+userGuessFavNumber();
 
 // Question 7:
 let favTVShowAnswers = ['Blacklist', 'Prison Break', 'Power', 'Money Heist', 'Game of Thrones'];
