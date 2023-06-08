@@ -10,8 +10,14 @@ I am currently working on a personal website project where I showcase my skills 
 
 ### Lighthouse Accessibility Report Score
 
-![Screenshot runnning lighthouse Accessibility report](img/Screenshot.png)
+![Screenshot runnning lighthouse Accessibility report](img/Screenshot2.png)
 
 ### Reflections and Comments
 
+### Day 1:
+
 Some of the tools I learned so far were some of the different types such as strings, booleans, and numbers which I was able to use some of them on my project. I also learned how to declare variables such as 'const' or 'let'. Those wer just some of the things I learned so far there are many more.
+
+### Day 2:
+
+Some tools that I learned today were how to use arrays and that it can store multiple variables and it can also be a list, collection, etc. Each element in the arrayhas an index(number). We know it is an array if it has square brackets around it. We also learned about for loops and while loops in class today which I was able to use in todays project.
