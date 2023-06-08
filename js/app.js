@@ -80,18 +80,22 @@ function userGuessCruising() {
 userGuessCruising();
 
 // Question 5:
-let doILikeMovies = prompt('Do I like to watch movies?').toLowerCase();
-if (doILikeMovies === 'no' || doILikeMovies === 'n') {
-  // console.log('Yes, I don\'t like movies!');
-  alert('Yes you are correct');
-  totalCorrectAnswers++;
-} else if (doILikeMovies === 'yes' || doILikeMovies === 'y') {
-  // console.log('That\'s wrong');
-  alert('No that is incorrect');
-} else {
-  // console.log('The answer has to be a yes or a no');
-  alert('The answer has to be a yes or no');
+
+function userGuessWatchingMovies() {
+  let doILikeMovies = prompt('Do I like to watch movies?').toLowerCase();
+  if (doILikeMovies === 'no' || doILikeMovies === 'n') {
+    // console.log('Yes, I don\'t like movies!');
+    alert('Yes you are correct');
+    totalCorrectAnswers++;
+  } else if (doILikeMovies === 'yes' || doILikeMovies === 'y') {
+    // console.log('That\'s wrong');
+    alert('No that is incorrect');
+  } else {
+    // console.log('The answer has to be a yes or a no');
+    alert('The answer has to be a yes or no');
+  }
 }
+userGuessWatchingMovies();
 
 // Question 6:
 let correctNumber = '7'; // The correct number to guess
