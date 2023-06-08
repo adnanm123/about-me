@@ -26,18 +26,22 @@ function favoriteSports() {
 favoriteSports();
 
 // Question 2:
-let doILikeVideoGames = prompt('Do I like video games?').toLowerCase();
-if (doILikeVideoGames === 'yes' || doILikeVideoGames === 'y') {
-  // console.log('Yes, I do like video games!');
-  alert('Yes you are correct');
-  totalCorrectAnswers++;
-} else if (doILikeVideoGames === 'no' || doILikeVideoGames === 'n') {
-  // console.log('That\'s wrong');
-  alert('No that is incorrect');
-} else {
-  // console.log('The answer has to be a yes or a no');
-  alert('The answer has to be a yes or no');
+
+function userGuessVideoGames() {
+  let doILikeVideoGames = prompt('Do I like video games?').toLowerCase();
+  if (doILikeVideoGames === 'yes' || doILikeVideoGames === 'y') {
+    // console.log('Yes, I do like video games!');
+    alert('Yes you are correct');
+    totalCorrectAnswers++;
+  } else if (doILikeVideoGames === 'no' || doILikeVideoGames === 'n') {
+    // console.log('That\'s wrong');
+    alert('No that is incorrect');
+  } else {
+    // console.log('The answer has to be a yes or a no');
+    alert('The answer has to be a yes or no');
+  }
 }
+userGuessVideoGames();
 
 // Question3:
 let doILikeTraveling = prompt('Do I like to travel?').toLowerCase();
