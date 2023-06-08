@@ -62,18 +62,22 @@ function userGuessTravel() {
 userGuessTravel();
 
 // Question 4:
-let doILikeCrusing = prompt('Do I like to go cruising?').toLowerCase();
-if (doILikeCrusing === 'no' || doILikeCrusing === 'n') {
-  // console.log('No, I don\'t like to cruise!');
-  alert('Yes you are correct');
-  totalCorrectAnswers++;
-} else if (doILikeCrusing === 'yes' || doILikeCrusing === 'y') {
-  // console.log('That\'s wrong');
-  alert('No that is incorrect');
-} else {
-  // console.log('The answer has to be a yes or a no');
-  alert('The answer has to be a yes or no');
+
+function userGuessCruising() {
+  let doILikeCrusing = prompt('Do I like to go cruising?').toLowerCase();
+  if (doILikeCrusing === 'no' || doILikeCrusing === 'n') {
+    // console.log('No, I don\'t like to cruise!');
+    alert('Yes you are correct');
+    totalCorrectAnswers++;
+  } else if (doILikeCrusing === 'yes' || doILikeCrusing === 'y') {
+    // console.log('That\'s wrong');
+    alert('No that is incorrect');
+  } else {
+    // console.log('The answer has to be a yes or a no');
+    alert('The answer has to be a yes or no');
+  }
 }
+userGuessCruising();
 
 // Question 5:
 let doILikeMovies = prompt('Do I like to watch movies?').toLowerCase();
