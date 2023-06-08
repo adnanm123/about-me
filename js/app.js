@@ -131,30 +131,35 @@ function userGuessFavNumber() {
 userGuessFavNumber();
 
 // Question 7:
-let favTVShowAnswers = ['Blacklist', 'Prison Break', 'Power', 'Money Heist', 'Game of Thrones'];
-let howManyAttempts = 6; // set the number of attempts to 6
-let correctAnswer = false; // initialize 'correctAnswer' variable as false to track if the user has guessed the correct answer
-while (howManyAttempts > 0) {
-  console.log(`You have ${howManyAttempts} attempts remaining`);
 
-  let userTVQuestion = prompt('What is one of my favorite tv shows');
-  howManyAttempts--;
-  for (let i = 0; i < favTVShowAnswers.length; i++) {
-    if (userTVQuestion === favTVShowAnswers[i].toLowerCase()) {
-      console.log('You are correct');
-      alert('You are correct!');
-      totalCorrectAnswers++;
-      correctAnswer = true;
-      howManyAttempts--;
-      howManyAttempts = 0; // Exit the while loop
-      break; // Exit the for loop
+function userGuessFavShow() {
+  let favTVShowAnswers = ['Blacklist', 'Prison Break', 'Power', 'Money Heist', 'Game of Thrones'];
+  let howManyAttempts = 6; // set the number of attempts to 6
+  let correctAnswer = false; // initialize 'correctAnswer' variable as false to track if the user has guessed the correct answer
+  while (howManyAttempts > 0) {
+    console.log(`You have ${howManyAttempts} attempts remaining`);
+
+    let userTVQuestion = prompt('What is one of my favorite tv shows');
+    howManyAttempts--;
+    for (let i = 0; i < favTVShowAnswers.length; i++) {
+      if (userTVQuestion === favTVShowAnswers[i].toLowerCase()) {
+        console.log('You are correct');
+        alert('You are correct!');
+        totalCorrectAnswers++;
+        correctAnswer = true;
+        howManyAttempts--;
+        howManyAttempts = 0; // Exit the while loop
+        break; // Exit the for loop
+      }
+    }
+    if(!correctAnswer && howManyAttempts > 0){
+      console.log('You are incorrect. Try again.');
+      alert('You are incorrect. Try again.');
+      console.log('You have' + howManyAttempts + 'attempts remaining');
+      alert(`You have ${howManyAttempts} attempts remaining`);
     }
   }
-  if(!correctAnswer && howManyAttempts > 0){
-    console.log('You are incorrect. Try again.');
-    alert('You are incorrect. Try again.');
-    console.log('You have' + howManyAttempts + 'attempts remaining');
-    alert(`You have ${howManyAttempts} attempts remaining`);
-  }
 }
+userGuessFavShow();
+
 alert(`You got ${totalCorrectAnswers} correct out of 7 questions asked.`);
