@@ -10,7 +10,7 @@ I am currently working on a personal website project where I showcase my skills 
 
 ### Lighthouse Accessibility Report Score
 
-![Screenshot runnning lighthouse Accessibility report](img/Screenshot2.png)
+![Screenshot runnning lighthouse Accessibility report](img/Lab5Screenshot.png)
 
 ### Reflections and Comments
 

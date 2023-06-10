@@ -1,11 +1,13 @@
 /* This is where you will write your CSS */
 html {
-  background-color: beige;
+  background-color: #0D3B66;
 }
 
 #header1 {
   font-size: 3rem;
-  color: lightgreen;
+  text-align: center;
+  padding: 2rem;
+  background-color: lightskyblue;
 } 
 
 ul {
@@ -13,20 +15,26 @@ ul {
   margin: 2rem;
 }
 
+ul li a {
+  color: white;
+}
+
+ul li a:hover {
+  color: red;
+}
+
 ol {
   list-style-position: inside;
   list-style: decimal;
   padding: 1rem;
-  color: brown;
+  color: white;
   padding: 2rem;
+  margin: 2rem;
+  padding-left: 2rem;
 }
 
-img {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  height: 20rem;
-  width: 15rem;
+ol li {
+  margin-bottom: 1rem;
 }
 
 .header2 {
@@ -39,7 +47,7 @@ img {
 
 p {
   margin: 1em;
-  color: brown;
+  color: white;
 }
 
 .header3 {
@@ -63,4 +71,12 @@ p {
   color: lightgreen;
   text-align: left;
   padding: 1rem;
+}
+
+footer {
+  background-color: lightskyblue;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding: 2rem;
 }

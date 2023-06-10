@@ -1,9 +1,9 @@
 'use strict';
 
-let totalCorrectAnswers = 0;
 // Welcome message
+
+let totalCorrectAnswers = 0;
 let userName = prompt('Please enter your name:');
-// console.log(userName);
 alert('Welcome to my website, ' + userName + '!');
 
 // Question 1:
@@ -12,14 +12,11 @@ function favoriteSports() {
 
   let doILikeSports = prompt('Do I like sports?').toLowerCase();
   if (doILikeSports === 'yes' || doILikeSports === 'y') {
-    // console.log('Yes, I do like sports!');
     alert('Yes you are correct');
     totalCorrectAnswers++;
   } else if (doILikeSports === 'no' || doILikeSports === 'n') {
-    // console.log('That\'s wrong');
     alert('No that is incorrect');
   } else {
-    // console.log('The answer has to be a yes or a no');
     alert('The answer has to be a yes or no');
   }
 }
@@ -30,14 +27,11 @@ favoriteSports();
 function userGuessVideoGames() {
   let doILikeVideoGames = prompt('Do I like video games?').toLowerCase();
   if (doILikeVideoGames === 'yes' || doILikeVideoGames === 'y') {
-    // console.log('Yes, I do like video games!');
     alert('Yes you are correct');
     totalCorrectAnswers++;
   } else if (doILikeVideoGames === 'no' || doILikeVideoGames === 'n') {
-    // console.log('That\'s wrong');
     alert('No that is incorrect');
   } else {
-    // console.log('The answer has to be a yes or a no');
     alert('The answer has to be a yes or no');
   }
 }
@@ -48,14 +42,11 @@ userGuessVideoGames();
 function userGuessTravel() {
   let doILikeTraveling = prompt('Do I like to travel?').toLowerCase();
   if (doILikeTraveling === 'yes' || doILikeTraveling === 'y') {
-    // console.log('Yes, I do like to travel!');
     alert('Yes you are correct');
     totalCorrectAnswers++;
   } else if (doILikeTraveling === 'no' || doILikeTraveling === 'n') {
-    // console.log('That\'s wrong');
     alert('No that is incorrect');
   } else {
-    // console.log('The answer has to be a yes or a no');
     alert('The answer has to be a yes or no');
   }
 }
@@ -66,14 +57,11 @@ userGuessTravel();
 function userGuessCruising() {
   let doILikeCrusing = prompt('Do I like to go cruising?').toLowerCase();
   if (doILikeCrusing === 'no' || doILikeCrusing === 'n') {
-    // console.log('No, I don\'t like to cruise!');
     alert('Yes you are correct');
     totalCorrectAnswers++;
   } else if (doILikeCrusing === 'yes' || doILikeCrusing === 'y') {
-    // console.log('That\'s wrong');
     alert('No that is incorrect');
   } else {
-    // console.log('The answer has to be a yes or a no');
     alert('The answer has to be a yes or no');
   }
 }
@@ -84,14 +72,11 @@ userGuessCruising();
 function userGuessWatchingMovies() {
   let doILikeMovies = prompt('Do I like to watch movies?').toLowerCase();
   if (doILikeMovies === 'no' || doILikeMovies === 'n') {
-    // console.log('Yes, I don\'t like movies!');
     alert('Yes you are correct');
     totalCorrectAnswers++;
   } else if (doILikeMovies === 'yes' || doILikeMovies === 'y') {
-    // console.log('That\'s wrong');
     alert('No that is incorrect');
   } else {
-    // console.log('The answer has to be a yes or a no');
     alert('The answer has to be a yes or no');
   }
 }
@@ -100,12 +85,12 @@ userGuessWatchingMovies();
 // Question 6:
 
 function userGuessFavNumber() {
-  let correctNumber = '7'; // The correct number to guess
-  let remainingAttempts = 4; // Number of attempts the user has
+  let correctNumber = '7';
+  let remainingAttempts = 4;
 
   while (remainingAttempts > 0) {
     console.log(`You have ${remainingAttempts} attempts remaining`);
-    let userGuessAnswer = prompt('Guess a number between 1 and 10.'); // Prompt the user to enter a numeric guess
+    let userGuessAnswer = prompt('Guess a number between 1 and 10.');
     remainingAttempts--;
     if (userGuessAnswer === correctNumber) {
       console.log('You are correct');
@@ -113,7 +98,7 @@ function userGuessFavNumber() {
       totalCorrectAnswers++;
       remainingAttempts--;
       remainingAttempts = 0;
-      break; // Exit the loop since the user has guessed correctly
+      break;
     } else if (userGuessAnswer < correctNumber) {
       alert('Too low! Try again.');
       console.log('You have' + remainingAttempts + 'attempts remaining');
@@ -134,8 +119,8 @@ userGuessFavNumber();
 
 function userGuessFavShow() {
   let favTVShowAnswers = ['Blacklist', 'Prison Break', 'Power', 'Money Heist', 'Game of Thrones'];
-  let howManyAttempts = 6; // set the number of attempts to 6
-  let correctAnswer = false; // initialize 'correctAnswer' variable as false to track if the user has guessed the correct answer
+  let howManyAttempts = 6;
+  let correctAnswer = false;
   while (howManyAttempts > 0) {
     console.log(`You have ${howManyAttempts} attempts remaining`);
 
@@ -148,8 +133,8 @@ function userGuessFavShow() {
         totalCorrectAnswers++;
         correctAnswer = true;
         howManyAttempts--;
-        howManyAttempts = 0; // Exit the while loop
-        break; // Exit the for loop
+        howManyAttempts = 0;
+        break;
       }
     }
     if(!correctAnswer && howManyAttempts > 0){
